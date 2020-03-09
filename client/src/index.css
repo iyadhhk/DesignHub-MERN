@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Noir_medium';
+  src: local('Noir_medium'), url(./myfonts/Noir_medium.otf) format('OpenType');
+}
+
+@font-face {
+  font-family: 'Noir_regular';
+  src: local('Noir_regular'), url(./myfonts/Noir_regular.otf) format('OpenType');
+}
+
+@font-face {
+  font-family: 'hero_4';
+  src: local('hero_4'), url(./myfonts/hero_4.ttf) format('TrueType');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

@@ -1,0 +1,146 @@
+.footer {
+  max-width: 100vw;
+  height: 400px;
+  color: #2e007a;
+  font-family: Noir_regular;
+  font-size: 28px;
+  background: rgb(238, 197, 23);
+  background: linear-gradient(48deg, #eec517 0%, #ffdc0f 100%);
+  bottom: 0;
+  -webkit-animation: color-change-3x 4s linear infinite alternate both;
+  animation: color-change-3x 4s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #ffdc0f;
+  }
+  50% {
+    background: #e7c400;
+  }
+  100% {
+    background: #ffe819;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #ffdc0f;
+  }
+  50% {
+    background: #e7c400;
+  }
+  100% {
+    background: #ffe819;
+  }
+}
+
+.footercolumns {
+  margin-left: 17vw;
+  margin-right: 17vw;
+  display: flex;
+}
+
+.footer1 {
+  margin-right: 10%;
+  margin-top: 4vw;
+}
+
+.footerboldtext {
+  font-family: Noir_medium;
+  font-size: 28px;
+}
+
+.footer2 {
+  margin-right: 5%;
+  margin-top: 4vw;
+  min-width: 160px;
+}
+
+.footerlefttext {
+  margin-left: -1vw;
+}
+
+.footericons a {
+  margin-right: 0.5vw;
+}
+
+.footericons {
+  margin-top: -1vw;
+}
+
+.footericons img {
+  max-width: 35px;
+  min-width: 35px;
+}
+
+.footer3 {
+  margin-left: 5%;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 8vw;
+  min-width: 340px;
+}
+
+@media only screen and (max-width: 1225px) {
+  .footer {
+    font-size: 24px;
+  }
+
+  .footercolumns {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .footerboldtext {
+    font-size: 26px;
+  }
+
+  .footer2 {
+    margin-right: 10%;
+  }
+
+  .footer3 {
+    font-size: 28px;
+    min-width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .footer {
+    font-size: 18px;
+  }
+
+  .footerboldtext {
+    font-size: 18px;
+  }
+
+  .footer2 {
+    margin-right: 0;
+    min-width: 120px;
+  }
+
+  .footer3 {
+    font-size: 24px;
+    min-width: 150px;
+    max-width: 180px;
+    margin-left: 10vw;
+  }
+
+  .footercolumns {
+    margin-left: 28px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .footer3 {
+    font-size: 20px;
+    min-width: 120px;
+    margin-left: 0;
+  }
+
+  .footer1 {
+    margin-right: 0;
+  }
+}

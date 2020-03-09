@@ -1,0 +1,548 @@
+/* Global Styles */
+:root {
+  --primary-color: #0b307e;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  /* --success-color: #2aeca3; */
+  --success-color: #30d295;
+  /* #CFC8C9 */
+}
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* -------------------------- */
+select {
+  color: gray;
+}
+.hubgreen-text {
+  color: #30d295;
+}
+.hubblue-text {
+  color: #0b307e;
+}
+.hubcapitalheader {
+  text-transform: capitalize;
+}
+
+/*  */
+/* a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*/
+body {
+  background: rgb(214, 214, 214);
+  background: linear-gradient(
+    24deg,
+    rgba(214, 214, 214, 1) 0%,
+    rgba(246, 246, 246, 1) 100%
+  );
+}
+
+/* Utilities */
+img {
+  width: 100%;
+}
+.hubcontainer {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+/* Text Styles*/
+.hubx-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hublarge {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hublead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hubtext-center {
+  text-align: center;
+}
+
+.hubtext-primary {
+  color: var(--primary-color);
+}
+
+.hubtext-dark {
+  color: var(--dark-color);
+}
+
+/* Padding */
+.hubp {
+  padding: 0.5rem;
+}
+.hubp-1 {
+  padding: 1rem;
+}
+.hubp-2 {
+  padding: 2rem;
+}
+.hubp-3 {
+  padding: 3rem;
+}
+.hubpy {
+  padding: 0.5rem 0;
+}
+.hubpy-1 {
+  padding: 1rem 0;
+}
+.hubpy-2 {
+  padding: 2rem 0;
+}
+.hubpy-3 {
+  padding: 3rem 0;
+}
+
+/* Margin */
+.hubm {
+  margin: 0.5rem;
+}
+.hubm-1 {
+  margin: 1rem;
+}
+.hubm-2 {
+  margin: 2rem;
+}
+.hubm-3 {
+  margin: 3rem;
+}
+.hubmy {
+  margin: 0.5rem 0;
+}
+.hubmy-1 {
+  margin: 1rem 0;
+}
+.hubmy-2 {
+  margin: 2rem 0;
+}
+.hubmy-3 {
+  margin: 3rem 0;
+}
+
+.hubbtn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.hubbadge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: var(--light-color);
+  color: #333;
+}
+
+.hubalert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+.hubbtn-primary,
+.hubbg-primary,
+.hubbadge-primary,
+.hubalert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.hubbtn-light,
+.hubbg-light,
+.hubbadge-light,
+.hubalert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.hubbtn-dark,
+.hubbg-dark,
+.hubbadge-dark,
+.hubalert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.hubbtn-danger,
+.hubbg-danger,
+.hubbadge-danger,
+.hubalert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.hubbtn-success,
+.hubbg-success,
+.hubbadge-success,
+.hubalert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.hubbtn-white,
+.hubbg-white,
+.hubbadge-white,
+.hubalert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.hubbtn:hover {
+  opacity: 0.8;
+}
+
+.hubbg-light,
+.hubbadge-light {
+  border: #ccc solid 1px;
+}
+
+.hubround-img {
+  border-radius: 50%;
+}
+
+.hubline {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+/* Overlay */
+.hubdark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Forms */
+.hubform .hubform-group {
+  margin: 1.2rem 0;
+}
+
+.hubform .hubform-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.hubform input[type='text'],
+.hubform input[type='email'],
+.hubform input[type='password'],
+.hubform input[type='date'],
+.hubform select,
+.hubform textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.hubform input[type='submit'],
+button {
+  font: inherit;
+}
+
+.hubform .hubsocial-input {
+  display: flex;
+}
+
+.hubform .hubsocial-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.hubform .hubsocial-input i.fa-twitter {
+  color: #38a1f3;
+}
+.hubform .hubsocial-input i.fa-facebook {
+  color: #3b5998;
+}
+.hubform .hubsocial-input i.fa-instagram {
+  color: #3f729b;
+}
+.hubform .hubsocial-input i.fa-youtube {
+  color: #c4302b;
+}
+.hubform .hubsocial-input i.fa-linkedin {
+  color: #0077b5;
+}
+
+.hubtable th,
+.hubtable td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.hubtable th {
+  background: var(--light-color);
+}
+
+/* Navbar */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px var(--primary-color);
+  opacity: 0.9;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+} */
+
+/* Landing Page */
+/* .landing {
+  position: relative;
+  background: url('./img/hello.jpg') no-repeat center center/cover;
+  height: 100vh;
+} */
+
+.hublanding-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Profiles Page */
+.hubprofile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Profile Page */
+.hubprofile-grid {
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'about about'
+    'exp edu'
+    'github github';
+  grid-gap: 1rem;
+}
+
+.hubprofile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hubprofile-top img {
+  width: 250px;
+}
+
+.hubprofile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.hubprofile-top .hubicons a:hover {
+  color: var(--dark-color);
+}
+
+.hubprofile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.hubprofile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hubprofile-exp {
+  grid-area: exp;
+}
+
+.hubprofile-edu {
+  grid-area: edu;
+}
+
+.hubprofile-exp h2,
+.hubprofile-edu h2 {
+  margin-bottom: 1rem;
+}
+
+.hubprofile-exp > div,
+.hubprofile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.hubprofile-exp > div:last-child,
+.hubprofile-edu > div:last-child {
+  border: 0;
+}
+
+.hubprofile-exp p,
+.hubprofile-edu p {
+  margin: 0.5rem 0;
+}
+
+.hubprofile-github {
+  grid-area: github;
+}
+
+.hubprofile-github .repo {
+  display: flex;
+}
+
+.hubprofile-github .repo > div:first-child {
+  flex: 7;
+  flex-basis: 70%;
+}
+
+.hubprofile-github > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .hubcontainer {
+    margin-top: 8rem;
+  }
+
+  .hubhide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .hubx-large {
+    font-size: 3rem;
+  }
+
+  .hublarge {
+    font-size: 2rem;
+  }
+
+  .hublead {
+    font-size: 1rem;
+  }
+
+  /* Profiles Page */
+  .hubprofile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hubprofile ul {
+    display: none;
+  }
+
+  /* Profile Page */
+
+  .hubprofile-top img,
+  .hubprofile img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .hubprofile-grid {
+    grid-template-areas:
+      'top'
+      'about'
+      'exp'
+      'edu'
+      'github';
+  }
+
+  .hubprofile-about .skills {
+    flex-direction: column;
+  }
+
+  .hubdash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+}

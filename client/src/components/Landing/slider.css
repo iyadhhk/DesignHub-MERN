@@ -1,0 +1,354 @@
+.my-slider {
+  margin-top: 20vh;
+  margin: 6vw;
+}
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 1000px; /* Or set a fixed height */
+}
+
+.slide-a {
+  position: relative;
+}
+
+.slide-info {
+  background: rgb(43, 4, 122);
+  background: linear-gradient(
+    108deg,
+    rgba(43, 4, 122, 1) 0%,
+    rgba(0, 64, 128, 1) 100%
+  );
+  min-width: 450px;
+  max-width: 450px;
+  min-height: 480px;
+  max-height: 480px;
+  position: absolute;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 30px;
+  font-family: Noir_regular;
+  transition: ease-in-out 0.4s;
+}
+
+.slide-a img {
+  width: 600px;
+  min-height: 480px;
+  max-height: 480px;
+  float: right;
+}
+
+.projectname {
+  font-family: Noir_medium;
+  font-size: 42px;
+}
+
+.projectdate {
+  margin-top: -20px;
+  font-size: 22px;
+}
+
+.displayed-project-info {
+  font-size: 28px;
+  line-height: 25px;
+}
+
+.slidecontactdesigner {
+  font-family: hero_4;
+  font-size: 32px;
+  width: 240px;
+  height: 60px;
+  border: none;
+  border-radius: 0.75vw;
+  background: rgb(23, 128, 103);
+  background: linear-gradient(
+    52deg,
+    rgb(20, 124, 100) 15%,
+    rgba(46, 255, 173, 1) 100%
+  );
+  color: #d2d2d2;
+  margin-top: 10px;
+  box-shadow: -5px 5px 8px black;
+  -webkit-animation: vibrate-1 0.5s linear infinite reverse both;
+  animation: vibrate-1 0.5s linear infinite reverse both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.slidestartproject {
+  font-family: hero_4;
+  font-size: 40px;
+  width: 240px;
+  height: 60px;
+  border: none;
+  border-radius: 0.75vw;
+  background: rgb(228, 228, 228);
+  background: linear-gradient(
+    79deg,
+    rgba(228, 228, 228, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
+  );
+  color: #1b1a7c;
+  margin-top: 20px;
+  box-shadow: -5px 5px 8px black;
+  transition: ease-in-out 0.4s;
+}
+
+.slidestartproject:hover {
+  background: rgb(238, 197, 23);
+  background: linear-gradient(
+    48deg,
+    rgba(238, 197, 23, 1) 0%,
+    rgba(255, 220, 15, 1) 100%
+  );
+  box-shadow: -10px 10px 10px black;
+  transform: translateY(-5px);
+  color: #00395f;
+}
+/* SLIDER */
+
+.CSSgal .slider {
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
+}
+
+.CSSgal .prevNext > div + div {
+  visibility: hidden;
+}
+
+.CSSgal .prevNext a {
+  background: #fff;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}
+.CSSgal .prevNext a:hover {
+  opacity: 1;
+}
+.CSSgal .prevNext a + a {
+  left: auto;
+  right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.CSSgal .bullets > a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.CSSgal .bullets > a + a {
+  background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal > s:target ~ .bullets > * {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* ACTIVE */
+#s1:target ~ .bullets > *:nth-child(1) {
+  background: rgba(255, 255, 255, 1);
+}
+#s2:target ~ .bullets > *:nth-child(2) {
+  background: rgba(255, 255, 255, 1);
+}
+#s3:target ~ .bullets > *:nth-child(3) {
+  background: rgba(255, 255, 255, 1);
+}
+#s4:target ~ .bullets > *:nth-child(4) {
+  background: rgba(255, 255, 255, 1);
+}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal > s:target ~ .prevNext > * {
+  visibility: hidden;
+}
+/* ACTIVE: */
+#s1:target ~ .prevNext > *:nth-child(1) {
+  visibility: visible;
+}
+#s2:target ~ .prevNext > *:nth-child(2) {
+  visibility: visible;
+}
+#s3:target ~ .prevNext > *:nth-child(3) {
+  visibility: visible;
+}
+#s4:target ~ .prevNext > *:nth-child(4) {
+  visibility: visible;
+}
+
+#s1:target ~ .slider {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+#s2:target ~ .slider {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+#s3:target ~ .slider {
+  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+}
+#s4:target ~ .slider {
+  transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+}
+
+.CSSgal {
+  color: #fff;
+  text-align: center;
+}
+.CSSgal .slider h2 {
+  margin-top: 40vh;
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em;
+}
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1225px) {
+  .CSSgal {
+    max-width: 480px;
+  }
+
+  .slide-info {
+    background: rgb(43, 4, 122);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 4, 122, 0.829551889115021) 0%,
+      rgba(0, 64, 128, 0.8827731776304272) 29%,
+      rgba(0, 64, 128, 0) 96%
+    );
+  }
+
+  .slide-a img {
+    width: 480px;
+    min-height: 480px;
+    max-height: 480px;
+    float: right;
+  }
+  .my-slider {
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .my-slider {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
